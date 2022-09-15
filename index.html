@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function subscribeButtonClicked()
+        {
+         document.getElementById("subscribe-modal").style.display="flex";
+        }
+        function cancelButtonClicked()
+        {
+            document.getElementById("subscribe-modal").style.display="none";
+        }
+    </script>
+
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box !important;
+        }
+
+        .subscribe-button:hover {
+            background-color: grey !important;
+            opacity: 1 !important;
+        }
+
+        .icon-button:hover {
+            background-color: #ccc !important;
+            color: #000000 !important;
+        }
+
+        .like-button:hover {
+
+            background-color: #ccc !important;
+            border-color: #ccc !important;
+        }
+
+        .replies-button:hover {
+            background-color: #ccc !important;
+            color: #000000 !important;
+            border-color: #ccc !important;
+        }
+
+        .populer-post-item:hover {
+            background-color: #ccc !important;
+        }
+
+        .follow-me-icon-button:hover {
+            opacity: .6;
+        }
+
+        .icon-button {
+            color: #FFFFFF;
+            padding: 8px 16px;
+        }
+    </style>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./images/favicon (1).ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Fashion Blog</title>
+</head>
+
+<body style="width: 100%; padding:0; margin:0;
+            font-family: 'Oswald';
+            user-select: none;">
+    <div>
+        <!-- Nav bar start -->
+        <div style="width: 100%;
+                background-color: #000000;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                align-items: center;
+                 ">
+            <div style="display: flex; 
+                             flex-direction: row;
+                             flex-wrap: nowrap;
+                             justify-content: space-between;
+                             align-items: center;
+                             ">
+                <div class="icon-button">
+                    <i class="fa fa-facebook-official"></i>
+
+                </div>
+                <div class="icon-button">
+                    <i class="fa fa-instagram"></i>
+
+                </div>
+                <div class="icon-button">
+                    <i class="fa fa-snapchat"></i>
+                </div>
+                <div class="icon-button">
+                    <i class="fa fa-flickr"></i>
+
+                </div>
+                <div class="icon-button">
+                    <i class="fa fa-twitter-square"></i>
+
+                </div>
+                <div class="icon-button">
+                    <i class="fa fa-linkedin-square"></i>
+
+                </div>
+
+            </div>
+            <div>
+                <div style="padding: 10px; ">
+                    <img src="./images/search.jfif" alt="search" width="16px" height="16px">
+
+                </div>
+            </div>
+
+
+
+        </div>
+        <!-- Nav bar end -->
+
+        <!-- Section-1 start -->
+        <div style="background-color:#FFFFFF;
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding-left:16px;
+                    padding-right:16px;
+                    padding-top: 48px;
+                    padding-bottom: 48px;
+                    ">
+            <h1 style="font-weight: bolder;
+                        font-size: 48px;">
+                JANE BLOGLIFE
+            </h1>
+            <P style="font-weight: 400;
+                       font-size: 16px;
+                       margin: 10px 0px;">
+                Welcome to the blog of
+                <span style="  background-color: black; color:#FFFFFF; padding:0px 8px;">
+                    Jane's world
+                </span>
+            </P>
+        </div>
+        <!-- Section-1 end -->
+
+        <!-- Section-2 start -->
+        <div style="position: relative;">
+            <div style="display: flex;">
+                <img src="./images/jane.jpg" alt="jane" width="100%" />
+            </div>
+            <div style="padding: 12px 24px; position: absolute; top: 50%; transform: translateY(-50%); ">
+                <p style="margin: 10px 0px; font-size: 36px; font-weight:400; color: #FFFFFF; ">
+                    Jane's
+                </p>
+                <h1 style="font-size: 64px; font-weight:bolder; margin: 10px 0px; color: #FFFFFF; ">
+                    FASHION BLOG
+                </h1>
+                <div onclick="subscribeButtonClicked()" style="cursor: pointer; user-select: none; font-size: 18px; padding:12px 24px; background-color:#FFFFFF;opacity: .6; display: inline-block;"
+                    class="subscribe-button">
+                    SUBSCRIBE
+                </div>
+            </div>
+
+        </div>
+        <!-- Section-2 end -->
+
+        <!-- Section-3 start -->
+        <div style="display: flex;
+                   flex-direction: row;
+                   border: 1px solid #ccc;
+                   background-color: #F1F1F1;
+                   ">
+            <div style="width: 66.66666%;
+                       ">
+                <!-- Card-1 -->
+                <div style="background-color:#FFFFFF; 
+                                   padding:12px 24px;
+                                   margin: 16px;
+                                   display:flex;
+                                   flex-direction:column;
+                                   ">
+                    <h1 style="font-size: 24px; font-weight:400; text-align: center; margin: 10px 0;">
+                        TITLE HEADING
+                    </h1>
+                    <h3 style="font-size:18px; margin:10px 0; text-align:center; ">
+                        Title description,
+                        <span style="opacity: 0.6;">
+                            May 2, 2016
+                        </span>
+                    </h3>
+                    <img src="./images/girl_hat.jpg" alt="Girl hat" width="100%" style="padding: 16px 0;" />
+                    <p
+                        style="font-size: 15px;margin:15px 0;line-height:1.5; text-align:justify; font-family: 'Open Sans', sans-serif;">
+                        <span style="font-weight: bolder; ">
+                            More Hats!
+                        </span>
+                        I am crazy about hats these days. Some text about this blog entry. Fashion fashion and mauris
+                        neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod
+                        placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi
+                        non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum,
+                        porta lectus vitae, ultricies congue gravida diam non fringilla.
+                    </p>
+
+                    <p
+                        style="font-size: 15px;margin-bottom:15px;line-height:1.5; text-align:justify; font-family: 'Open Sans', sans-serif;">
+                        Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed
+                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco.
+                    </p>
+                    <div
+                        style="padding: 30px 0; display: flex; justify-content: space-between; font-family: 'Open Sans', sans-serif;">
+                        <div class="like-button" style="border:1px solid black; padding:8px 16px;">
+                            <i class="fa fa-thumbs-up"></i>
+                            <span style="font-weight: bolder; font: size 15px;line-height:1.5;">
+                                Like
+                            </span>
+                        </div>
+                        <div class="replies-button"
+                            style="border:1px solid black; padding:8px 16px; background-color: #000000; color:#FFFFFF">
+                            <spn style="font-weight: bolder;">Replies &nbsp;</spn>
+                            <span style="padding:0 8px; color:#000000; background-color:#FFFFFF; ">
+                                1
+                            </span>
+                        </div>
+                    </div>
+                    <div style="width:100%; border-top: 1px solid #eee; margin-bottom:20px;margin-top: 5px;"></div>
+                    <div style="display: flex; align-items: center;">
+                        <img width="90px" src="images//avatar_smoke (1).jpg" alt=" Avatar smoke"
+                            style="padding-right:25px;" />
+                        <div>
+                            <p style="margin-bottom: 15px;">
+                                <span style="margin:10px 0;font-size: 20px; font-weight: bolder;">
+                                    George
+                                </span>
+                                <span style="font: size 15px;opacity:0.6;">May 3, 2015, 6:32 PM</span>
+                            </p>
+                            <p style="font-family: 'Open Sans', sans-serif; font-size: 15px; line-height: 1.5;">
+                                Great blog post! Following
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <!-- Card-2 -->
+                <div style="background-color:#FFFFFF; 
+                                   padding:12px 24px;
+                                   margin: 16px;
+                                   display:flex;
+                                   flex-direction:column;
+                                   ">
+                    <h1 style="font-size: 24px; font-weight:400; text-align: center; margin: 10px 0;">
+                        TITLE HEADING
+                    </h1>
+                    <h3 style="font-size:18px; margin:10px 0; text-align:center; ">
+                        Title description,
+                        <span style="opacity: 0.6;">
+                            April 23, 2016
+                        </span>
+                    </h3>
+                    <img src="./images/man_hat.jpg" alt="Man-hat" width="100%" style="padding: 16px 0;" />
+                    <p
+                        style="font-size: 15px;margin:15px 0;line-height:1.5; text-align:justify; font-family: 'Open Sans', sans-serif;">
+                        <span style="font-weight: bolder; ">
+                            Hats!
+                        </span>
+                        The trend this summer is hats for men!
+                    </p>
+
+                    <p
+                        style="font-size: 15px;margin-bottom:15px;line-height:1.5; text-align:justify; font-family: 'Open Sans', sans-serif;">
+                        Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae,
+                        convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim,
+                        ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent
+                        tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue
+                        gravida diam non fringilla.
+                    </p>
+                    <div
+                        style="padding: 30px 0; display: flex; justify-content: space-between; font-family: 'Open Sans', sans-serif;">
+                        <div class="like-button" style="border:1px solid black; padding:8px 16px;">
+                            <i class="fa fa-thumbs-up"></i>
+                            <span style="font-weight: bolder; font: size 15px;line-height:1.5;">
+                                Like
+                            </span>
+                        </div>
+                        <div class="replies-button"
+                            style="border:1px solid black; padding:8px 16px; background-color: #000000; color:#FFFFFF">
+                            <spn style="font-weight: bolder;">Replies &nbsp;</spn>
+                            <span style="padding:0 8px; color:#000000; background-color:#FFFFFF; ">
+                                2
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card-3 -->
+                <div style="background-color:#FFFFFF; 
+                padding:12px 24px;
+                margin: 16px;
+                display:flex;
+                flex-direction:column;
+                ">
+                    <h1 style="font-size: 24px; font-weight:400; text-align: center; margin: 10px 0;">
+                        TITLE HEADING
+                    </h1>
+                    <h3 style="font-size:18px; margin:10px 0; text-align:center; ">
+                        Title description,
+                        <span style="opacity: 0.6;">
+                            April 7, 2016
+                        </span>
+                    </h3>
+                    <img src="./images/runway.jpg" alt="Runway" width="100%" style="padding: 16px 0;" />
+                    <p
+                        style="font-size: 15px;margin:15px 0;line-height:1.5; text-align:justify; font-family: 'Open Sans', sans-serif;">
+                        <span style="font-weight: bolder; ">
+                            Dont miss!
+                        </span>
+                        The runway in New York City this weekend is gonna be legendary!
+                    </p>
+
+                    <p
+                        style="font-size: 15px;margin-bottom:15px;line-height:1.5; text-align:justify; font-family: 'Open Sans', sans-serif;">
+                        Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae,
+                        convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim,
+                        ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent
+                        tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue
+                        gravida diam non fringilla.
+                    </p>
+                    <div
+                        style="padding: 30px 0; display: flex; justify-content: space-between; font-family: 'Open Sans', sans-serif;">
+                        <div class="like-button" style="border:1px solid black; padding:8px 16px;">
+                            <i class="fa fa-thumbs-up"></i>
+                            <span style="font-weight: bolder; font: size 15px;line-height:1.5;">
+                                Like
+                            </span>
+                        </div>
+                        <div class="replies-button"
+                            style="border:1px solid black; padding:8px 16px; background-color: #000000; color:#FFFFFF">
+                            <spn style="font-weight: bolder;">Replies &nbsp;</spn>
+                            <span style="padding:0 8px; color:#000000; background-color:#FFFFFF; ">
+                                3
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 60% div end -->
+
+            <div style="width: 33.33333%;
+                       ">
+                <div style="background-color:black; margin: 16px;">
+                    <div>
+                        <img src="./images/avatar_girl2.jpg" alt="Avater-girl2"
+                            style="width: 100%; filter: grayscale(75%);" />
+                    </div>
+                    <div style="background-color: #000; color:#fff; padding: 0.150px 16px; font-family: 'Open Sans'">
+                        <p style="padding: 10px 0; font-family:oswald; font-weight: 400;font-size: 20px;">
+                            My Name
+                        </p>
+                        <p style="margin: 15px 0; font-size:15px; line-height:1.5;">
+                            Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a
+                            interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.
+                        </p>
+                    </div>
+                </div>
+                <div style="padding-top: 24px; padding-bottom: 16px;padding-left: 16px; padding-right: 16px;">
+                    <p style="padding: 10px 16px;background-color:#000; color:#fff; font-size: 20px; margin-top:10px;">
+                        Popular Posts
+                    </p>
+                    <div style="background-color:#FFFFFF;">
+
+                        <div class="populer-post-item"
+                            style="display: flex; align-items: center; padding: 16px; border-bottom:1px solid #ccc;">
+                            <img width="50px" src="images//avatar_smoke (1).jpg" alt=" Avatar smoke"
+                                style="padding-right:16px;" />
+                            <div>
+                                <p>
+                                    <span style="font-size:18px; font-family:'open sans';">
+                                        Denim
+                                    </span>
+                                </p>
+                                <p style="font-family: 'Open Sans', sans-serif; font-size: 15px; line-height: 1.5;">
+                                    Sed mattis nunc
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="populer-post-item"
+                            style="display: flex; align-items: center; padding: 16px; border-bottom:1px solid #ccc;">
+                            <img width="50px" src="images/bandmember.jpg" alt=" Bandmember"
+                                style="padding-right:16px;" />
+                            <div>
+                                <p>
+                                    <span style="font-size:18px; font-family:'open sans';">
+                                        Sweaters
+                                    </span>
+                                </p>
+                                <p style="font-family: 'Open Sans', sans-serif; font-size: 15px; line-height: 1.5;">
+                                    Praes tinci sed
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="populer-post-item"
+                            style="display: flex; align-items: center; padding: 16px; border-bottom:1px solid #ccc;">
+                            <img width="50px" src="images//workshop.jpg" alt=" Workshop" style="padding-right:16px;" />
+                            <div>
+                                <p>
+                                    <span style="font-size:18px; font-family:'open sans';">
+                                        Workshop
+                                    </span>
+                                </p>
+                                <p style="font-family: 'Open Sans', sans-serif; font-size: 15px; line-height: 1.5;">
+                                    Ultricies congue
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="populer-post-item" style="display: flex; align-items: center; padding: 16px;">
+                            <img width="50px" src="images//avatar_smoke (1).jpg" alt=" Avatar smoke"
+                                style="padding-right:16px;" />
+                            <div>
+                                <p>
+                                    <span style="font-size:18px; font-family:'open sans';">
+                                        Trends
+                                    </span>
+                                </p>
+                                <p style="font-family: 'Open Sans', sans-serif; font-size: 15px; line-height: 1.5;">
+                                    Lorem ipsum dipsum
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin: 16px;">
+                    <p style="background-color: #000; color:#FFFFFF; padding: 10px 16px; font-size:20px;">
+                        Advertise
+                    </p>
+                    <div style="background-color: white;padding: 16px;">
+                        <div
+                            style="background-color:#F1F1F1; height:200px; display: flex; justify-content: center; align-items: center; font-size: 15px; font-family: 'open sans' ;">
+                            Your AD Here
+                        </div>
+
+                    </div>
+                </div>
+
+                <div style="background-color:#fff; margin: 16px;">
+                    <p style="background-color:black; color:#fff;padding: 10px 16px; font-size: 20px;">
+                        Tags
+                    </p>
+                    <div>
+                        <div
+                            style=" align-items: center; display: flex; flex-wrap: wrap; padding: 15px 16px; font-family: 'open sans'; line-height: 1.5;">
+                            <p
+                                style="margin: 0px 2px 16px 0px; background-color:black; color:#fff; display:inline-block; font-size: 15px;padding: 0px 8px; ">
+                                Fashion
+                            </p>
+                            <p
+                                style="padding: 0px 8px; background-color:#f1f1f1; display:inline-block;font-size: 12px; margin: 0px 2px 16px 0px;">
+                                New York
+                            </p>
+                            <p
+                                style="padding: 0px 8px; background-color:#f1f1f1; display:inline-block;font-size: 12px; margin: 0px 2px 16px 0px; ">
+                                London
+                            </p>
+                            <p
+                                style="padding: 0px 8px; background-color:#f1f1f1; display:inline-block;font-size: 12px; margin: 0px 2px 16px 0px; ">
+                                Hats
+                            </p>
+                            <p
+                                style="padding: 0px 8px; background-color:#f1f1f1; display:inline-block;font-size: 12px; margin: 0px 2px 16px 0px; ">
+                                Norway
+                            </p>
+                            <p
+                                style="padding: 0px 8px; background-color:#f1f1f1; display:inline-block;font-size: 12px; margin: 0px 2px 16px 0px; ">
+                                Sweaters
+                            </p>
+                            <p
+                                style="padding: 0px 8px; background-color:#f1f1f1; display:inline-block;font-size: 12px; margin: 0px 2px 16px 0px; ">
+                                Ideas
+                            </p>
+                            <p
+                                style="padding: 0px 8px; background-color:#f1f1f1; display:inline-block;font-size: 12px; margin: 0px 2px 16px 0px; ">
+                                Deals
+                            </p>
+                            <p
+                                style="padding: 0px 8px; background-color:#f1f1f1; display:inline-block;font-size: 12px; margin: 0px 2px 16px 0px; ">
+                                Accessories
+                            </p>
+                            <p
+                                style="padding: 0px 8px; background-color:#f1f1f1; display:inline-block; font-size: 12px; margin: 0px 2px 16px 0px; ">
+                                News
+                            </p>
+                            <p
+                                style="padding: 0px 8px; background-color:#f1f1f1; display:inline-block;font-size: 12px; margin: 0px 2px 16px 0px; ">
+                                Clothing
+                            </p>
+                            <p
+                                style="padding: 0px 8px; background-color:#f1f1f1; display:inline-block;font-size: 12px; margin: 0px 2px 16px 0px; ">
+                                Shopping
+                            </p>
+                            <p
+                                style="padding: 0px 8px; background-color:#f1f1f1; display:inline-block;font-size: 12px; margin: 0px 2px 16px 0px; ">
+                                Jeans
+                            </p>
+                            <p
+                                style="padding: 0px 8px; background-color:#f1f1f1; display:inline-block;font-size: 12px; margin: 0px 2px 16px 0px; ">
+                                Trends
+                            </p>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div style="background-color: #fff; margin:16px;">
+                    <p
+                        style="font-size: 20px; line-height: 1.5; background-color:#000; color:#fff; padding: 10px 16px ;">
+                        Inspiration
+                    </p>
+                    <div style="padding: 0px 8px; display:flex; flex-direction: row;">
+                        <div style="padding: 0px 8px; width: 50%;">
+                            <div style="margin: 15px 0px;">
+                                <img src="./images/jeans.jpg" alt="Jeans" ; width="100%" ; />
+
+                            </div>
+                            <div style="margin-bottom: 15px;">
+                                <img src="./images/team1.jpg" alt="Team1" width="100%" />
+                            </div>
+                        </div>
+                        <div style="padding: 0px 8px;width: 50%;">
+                            <div style="margin: 15px 0px;">
+                                <img src="./images/avatar_hat.jpg" alt="Avatar-hat" width="100%" ; />
+                            </div>
+                            <div style="margin-bottom: 15px;">
+                                <img src="./images/team4.jpg" alt="Team4" width="100%" />
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div style="margin:40px 16px 16px 16px;">
+                    <p
+                        style="background-color:black; color:#fff; padding: 18px 16px; font-size: 20px; line-height: 1.5;">
+                        Follow Me
+                    </p>
+                    <div
+                        style="background-color: white; padding:16px; font-size: 24px; display: flex; align-items: center;">
+                        <i style="margin-right:5px ;" class="fa fa-facebook-official follow-me-icon-button"></i>
+                        <i style="margin-right:5px;" class="fa fa-instagram follow-me-icon-button"></i>
+                        <i style="margin-right: 5px;" class="fa fa-snapchat follow-me-icon-button"></i>
+                        <i style="margin-right: 5px;" class="fa fa-pinterest-p follow-me-icon-button"></i>
+                        <i style="margin-right: 5px;" class="fa fa-twitter follow-me-icon-button"></i>
+                        <i style="margin-right: 5px;" class="fa fa-linkedin follow-me-icon-button"></i>
+                    </div>
+                </div>
+                <div style="margin: 16px;">
+                    <p
+                        style="background-color: black; color:#fff; padding: 18px 16px; font-size: 20px; line-height: 1.5;">
+                        Subscribe
+                    </p>
+                    <div style="padding: 16px; background-color: #fff; display: flex; flex-direction: column;">
+                        <p style="font-size: 15px; line-height:1.5;font-family:'open sans';">
+                            Enter your e-mail below and get notified on the latest blog posts.
+                        </p>
+                        <input type="email" placeholder="Enter e-mail" ;
+                            style="font-size: 15px; line-height:1.5; width:100%;padding: 8px;margin:15px 0px;" />
+                        <div  onclick="subscribeButtonClicked()" style="background-color: red; color:#fff; display: flex; justify-content: center; padding: 8px; font-size: 15px; line-height: 1.5; font-family: 'open sans'; cursor: pointer;"
+                            class="replies-button">
+                            Subscribe
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- Section-3 end -->
+    </div>
+    <div style="background-color: #616161; width: 100%; padding: 32px; font-size: 15px; font-family: 'open sans';">
+        <div style="background-color: black; padding :12px 24px; color: #fff; display: inline-block;"
+            class="replies-button">
+            <i class="fa fa-arrow-circle-up" style="margin-right: 8px;"></i>
+            To the top
+        </div>
+        <div style="margin-top:31px;margin-bottom: 15px; color:#fff">
+            Powered by <a href="https://www.w3schools.com/w3css/default.asp" style="color: #fff;">w3.css </a>
+        </div>
+    </div>
+    <div  id="subscribe-modal" style="background-color: rgba(0, 0, 0, .3); display:none; justify-content:center; position:fixed; top:0px; width: 100%;height:100%;align-items: flex-start; padding-top: 100px;">
+        <div style="background-color: #fff; width:50%;  padding: 32px;">
+            <div style="display: flex; flex-direction:row; justify-content:space-between; margin: 16px 0px;">
+                <div style="font-size:30px; font-weight:400; letter-spacing:4px;">
+                    SUBSCRIBE
+                </div>
+                <div onclick="cancelButtonClicked()" style="font-size: 24px;">
+                    <i class="fa fa-close"></i>
+                </div>
+            </div>
+            <p style="font-family: 'open sans'; margin-bottom: 15px;">
+                Join my mailing list to receive updates on the latest blog posts and other things.
+            </p>
+            <input type="email" placeholder="Enter e-mail" style="width: 100%; padding:8px; font-size:15px; line-height:1.5;"/>
+            <div style="background-color:red; width: 100%; margin: 15px 0px; padding: 8px 0px; display: flex; justify-content: center; color:#fff;" class="replies-button">
+                Subscribe
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
